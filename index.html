@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <span class="pitenSkul"></span>
+            Select Plan You Like Most
+            <span class="pitenSkul"></span>
+        </div>
+        <div class="plans-container">
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="newtone">
+                        <div class="outerDoc">
+                            <div class="radio-button"></div>
+                        </div>
+                        <div class="plan-details">
+                            <h3>1 Unit <span class="discount-badge">10% off</span></h3>
+                            <p>Standard price</p>
+                        </div>
+                    </div>
+
+                    <div class="price-details">
+                        <h3>$10.00 USD</h3>
+                        <p class="original-price">$24.00 USD</p>
+                    </div>
+                </div>
+                <div class="expanded-options"></div>
+            </div>
+            <div class="plan-card selected">
+                <!-- <div class="most-popular-ribbon">MOST POPULAR</div> -->
+                <a class="close-ribbon">MOST POPULAR<span class="close-ribbon-sep"></span></a>
+                <div class="plan-header">
+                    <div class="newtone">
+                        <div class="outerDoc selected">
+                            <div class="radio-button selected"></div>
+                        </div>
+                        <div class="plan-details">
+                            <h3>2 Units <span class="discount-badge">20% off</span></h3>
+                        </div>
+                    </div>
+                    <div class="price-details">
+                        <h3>$18.00 USD</h3>
+                        <p class="original-price">$45.00 USD</p>
+                    </div>
+                </div>
+                <div class="expanded-options"></div>
+            </div>
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="newtone">
+                        <div class="outerDoc">
+                            <div class="radio-button"></div>
+                        </div>
+                        <div class="plan-details">
+                            <h3>3 Units <span class="discount-badge">30% off</span></h3>
+                        </div>
+                    </div>
+                    <div class="price-details">
+                        <h3>$24.00 USD</h3>
+                        <p class="original-price">$65.00 USD</p>
+                    </div>
+                </div>
+                <div class="expanded-options"></div>
+            </div>
+        </div>
+        <div class="plans-container" style="margin-top: 20px;display:flex;flex-direction:row">
+            <div style="flex: 1; color: var(--themecolor);cursor: pointer;">Free Delivery</div>
+            <div>Total: $ <span id="anotherDoller"></span> USD</div>
+        </div>
+        <div class="plans-container">
+            <button class="add-to-cart"><span class="cooked">+</span> Add to Cart</button>
+        </div>
+    </main>
+    <script src="script.js" type="text/javascript" defer></script>
+</body>
+
+</html>
